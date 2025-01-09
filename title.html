@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アースム</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://source.unsplash.com/1600x900/?nature,trail');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            color: #2a9d8f;
+            font-size: 48px;
+        }
+        p {
+            font-size: 18px;
+            color: #264653;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #e76f51;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #d1495b;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><div class="icon">アースム🌍</div></h1>
+        <p>地球温暖化抑制のために、楽しくポイントをためましょう！</p>
+        <button onclick="startStepGame()">歩数ゲームを始める</button>
+        <button onclick="startOtherGame()">他のゲームを始める</button>
+    </div>
+
+    <script>
+        // 歩数ゲームを開始する関数
+        function startStepGame() {
+            window.location.href = "index.html"; // 歩数ゲームページに遷移
+        }
+
+        // 他のゲームを開始する関数
+        function startOtherGame() {
+            window.location.href = "other_game.html"; // 他のゲームページに遷移
+        }
+    </script>
+</body>
+</html>
